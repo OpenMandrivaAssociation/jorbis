@@ -29,7 +29,6 @@ Read the COPYING.LIB file for the complete license.
 %package javadoc
 Summary:	Javadoc for jorbis
 Group:		Development/Java
-PreReq:		coreutils
 
 %description javadoc
 Javadoc for jorbis.
