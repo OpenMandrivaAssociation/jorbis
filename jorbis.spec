@@ -3,7 +3,7 @@ Summary:		JOrbis - Pure Java Ogg Vorbis Decoder
 URL:			http://www.jcraft.com/jorbis/index.html
 Group:			Development/Java
 Version:		0.0.17
-Release:		%mkrel 0.0.3
+Release:		4
 License:		LGPL
 BuildRequires:	ant
 BuildRequires:	jpackage-utils
@@ -14,7 +14,6 @@ BuildRequires:	xml-commons-apis
 BuildRequires:	xml-commons-resolver
 Requires:		java >= 1.5
 BuildArch:		noarch
-BuildRoot:		%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Source0:		%{name}-%{version}.zip
 
 %description
@@ -87,12 +86,9 @@ popd
 
 # javadoc
 %__install -dm 755 %{buildroot}%{_javadocdir}/%{name}-%{version}
-%__cp -pr doc/* \
+cp -pr doc/* \
 	%{buildroot}%{_javadocdir}/%{name}-%{version}
 ln -s %{name}-%{version} %{buildroot}%{_javadocdir}/%{name}
-
-%clean
-[ -d %{buildroot} -a "%{buildroot}" != "" ] && %__rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
@@ -114,4 +110,21 @@ ln -s %{name}-%{version} %{buildroot}%{_javadocdir}/%{name}
 %defattr(-,root,root)
 %doc comment_editor/README
 %{_javadir}/JOrbisComment*.jar
+
+
+
+%changelog
+* Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 0.0.17-0.0.3mdv2011.0
++ Revision: 619832
+- the mass rebuild of 2010.0 packages
+
+* Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 0.0.17-0.0.2mdv2010.0
++ Revision: 429645
+- rebuild
+
+* Mon Sep 22 2008 Alexander Kurtakov <akurtakov@mandriva.org> 0.0.17-0.0.1mdv2009.0
++ Revision: 286737
+- remove unneeded PreReq
+- import jorbis
+
 
