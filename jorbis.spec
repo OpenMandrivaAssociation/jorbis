@@ -3,7 +3,7 @@ Summary:		JOrbis - Pure Java Ogg Vorbis Decoder
 URL:			http://www.jcraft.com/jorbis/index.html
 Group:			Development/Java
 Version:		0.0.17
-Release:		4
+Release:		5
 License:		LGPL
 BuildRequires:	ant
 BuildRequires:	jpackage-utils
