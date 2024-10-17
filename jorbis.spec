@@ -1,6 +1,6 @@
 Name:			jorbis
 Summary:		JOrbis - Pure Java Ogg Vorbis Decoder
-URL:			http://www.jcraft.com/jorbis/index.html
+URL:			https://www.jcraft.com/jorbis/index.html
 Group:			Development/Java
 Version:		0.0.17
 Release:		5
